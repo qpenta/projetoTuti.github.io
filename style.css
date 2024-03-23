@@ -1,0 +1,342 @@
+* {
+  font-family: Poppins, Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #424242;
+  --hover-gray: #c3c3c3;
+  --gray-bg: #d9d9d9;
+}
+
+body {
+  background-color: #ececec;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #d7d2d2;
+  margin: 20px;
+}
+
+nav img {
+  padding: 7px;
+}
+
+#feito-container {
+  display: flex;
+  padding: 10px;
+  background-color: var(--hover-gray);
+  align-items: center;
+  justify-content: end;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#feito-container a {
+  color: var(--text-color);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 20px;
+}
+
+.conteudo {
+  grid-column: 1;
+
+  padding: 20px;
+}
+
+.h1-container h1 {
+  font-size: 5.75rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.h1-container img {
+  position: absolute;
+  top: 290px;
+  left: 420px;
+  height: 100px;
+}
+article p {
+  margin: 20px;
+}
+
+.dev-icons {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-bg);
+  border-radius: 80px;
+  margin-top: 50px;
+  max-width: 600px;
+  overflow-x: auto; /* Adiciona   uma barra de rolagem horizontal */
+  white-space: nowrap; /* Impede que os ícones quebrem a linha */
+  position: relative; /* Permitirá posicionar a seta em relação a este contêiner */
+  padding: 11px;
+  margin-left: 50px;
+}
+.dev-icons::-webkit-scrollbar {
+  display: none;
+}
+
+#scroll-right {
+  position: absolute;
+  background-color: var(--gray-bg);
+  cursor: pointer;
+  height: auto;
+  padding: 44px 30px;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  left: 610px;
+  bottom: 65px;
+  z-index: 5;
+}
+
+#scroll-left {
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--gray-bg);
+  height: auto;
+  left: 200px;
+  padding: 44px 30px;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  left: 40px;
+  bottom: 65px;
+  z-index: 5;
+}
+
+#scroll-left:hover {
+  background-color: var(--hover-gray);
+}
+#scroll-right:hover {
+  background-color: var(--hover-gray);
+}
+
+.dev-icons img {
+  padding: 10px;
+}
+
+.div-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+section img {
+  width: 100%;
+  max-width: 500px;
+  padding-right: 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tipo-test {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-tipo-teste {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.front-test {
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid #000000;
+  background-color: transparent;
+  padding: 0px 20px;
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.front-test svg {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  fill: #000;
+}
+.front-test p {
+  color: #000000;
+  font-size: 1.15rem;
+}
+
+.front-test.active {
+  background-color: #000000;
+}
+
+.front-test.active p {
+  color: #fff;
+}
+.front-test.active svg {
+  fill: #fff;
+}
+
+.back-test svg {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  fill: #000000;
+}
+
+.back-test.active svg {
+  fill: #fff;
+}
+.back-test.active {
+  background-color: #000;
+}
+
+.back-test.active p {
+  color: #fff;
+}
+
+.back-test {
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid #000000;
+  background-color: transparent;
+  padding: 0px 20px;
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.back-test p {
+  color: #000000;
+  font-size: 1.15rem;
+}
+
+.back-test a {
+  text-decoration: none;
+}
+.front-test a {
+  text-decoration: none;
+}
+
+@media (max-width: 1600px) {
+  .img-mao {
+    margin-left: 120px;
+  }
+
+  #scroll-right {
+    margin-bottom: 88px;
+    margin-left: -30px;
+  }
+  #scroll-left {
+    margin-bottom: 88px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .josemaria-foto {
+    position: relative;
+    height: auto;
+  }
+
+  .conteudo {
+    padding: 10px;
+  }
+
+  article p {
+    max-width: 380px;
+  }
+
+  .h1-container h1 {
+    font-size: 3.8rem;
+    max-width: 400px;
+  }
+
+  .h1-container img {
+    width: 60px;
+    height: 60px;
+    left: 235px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    border-radius: 10px;
+  }
+
+  #feito-container {
+    margin-top: 10px;
+  }
+
+  .scroll-arrow {
+    display: none;
+  }
+
+  .dev-icons {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+
+  #scroll-right,
+  #scroll-left {
+    display: none;
+  }
+
+  .img-container p {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+    left: 0;
+  }
+
+  .button {
+    position: static;
+    margin: 20px auto;
+  }
+
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .div-content {
+    margin-bottom: 50px;
+    order: -2;
+  }
+
+  .barra-scroll {
+    max-height: 200px;
+  }
+
+  .div-content h3::after {
+    bottom: 190px;
+  }
+
+  .iphone {
+    width: 100%;
+  }
+}
