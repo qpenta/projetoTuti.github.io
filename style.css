@@ -332,17 +332,20 @@ section {
     width: 100%;
   }
   .p-tipo-teste {
-    margin-top: 250px;
+    margin-top: 420px;
   }
-  .tipo-test {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+
   .front-test {
     margin: 10px;
+    padding: 0px 10px;
   }
+
   .back-test {
     margin: 10px;
+    padding: 0px 10px;
+  }
+
+  .tipo-test {
   }
   .div-content {
     grid-template-rows: 1fr;

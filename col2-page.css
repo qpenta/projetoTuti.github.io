@@ -4,9 +4,18 @@ section {
 }
 
 .josemaria-foto {
+  position: relative;
+}
+
+.normal-ft {
   max-width: 100%;
   height: auto;
   width: 1200px;
+  display: block;
+}
+
+.pequeno-ft {
+  display: none;
 }
 
 .content-wrapper {
@@ -125,6 +134,16 @@ section {
     max-width: 400px;
   }
 
+  .normal-ft {
+    display: none;
+  }
+
+  .pequeno-ft {
+    display: block;
+    position: absolute;
+    top: 550px;
+    margin-left: 10px;
+  }
   .iphone {
     margin-left: 10px;
     max-width: 420px;
