@@ -17,7 +17,7 @@ const descriptions = {
     "JavaScript é uma linguagem de programação de alto nível e multi-paradigma.",
   CSS: "CSS (Cascading Style Sheets) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML.",
   node: "Node.js é um ambiente de tempo de execução JavaScript que permite executar código JavaScript no servidor.",
-  est: "Nest.js é um framework para construção de aplicativos eficientes e escaláveis em Node.js.",
+  nest: "Nest.js é um framework para construção de aplicativos eficientes e escaláveis em Node.js.",
   mysql:
     "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto amplamente utilizado.",
   docker:

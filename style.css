@@ -259,8 +259,13 @@ section {
   }
 
   .josemaria-foto {
-    position: relative;
+    position: absolute;
     height: auto;
+    top: 540px;
+    margin-left: 10px;
+    background-color: #000;
+    width: 400px;
+    display: none;
   }
 
   .conteudo {
@@ -272,20 +277,19 @@ section {
   }
 
   .h1-container h1 {
-    font-size: 3.8rem;
+    font-size: 3.7rem;
     max-width: 400px;
   }
 
   .h1-container img {
-    width: 60px;
+    width: 50px;
     height: 60px;
     left: 235px;
+    top: 230px;
   }
 
   nav {
-    flex-direction: column;
     align-items: center;
-    max-width: 370px;
     border-radius: 10px;
   }
 
@@ -307,13 +311,6 @@ section {
     display: none;
   }
 
-  .img-container p {
-    position: static;
-    text-align: center;
-    margin-top: 10px;
-    left: 0;
-  }
-
   .button {
     position: static;
     margin: 20px auto;
@@ -321,11 +318,6 @@ section {
 
   .content-wrapper {
     grid-template-columns: 1fr;
-  }
-
-  .div-content {
-    margin-bottom: 50px;
-    order: -2;
   }
 
   .barra-scroll {
@@ -338,5 +330,27 @@ section {
 
   .iphone {
     width: 100%;
+  }
+  .p-tipo-teste {
+    margin-top: 250px;
+  }
+  .tipo-test {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .front-test {
+    margin: 10px;
+  }
+  .back-test {
+    margin: 10px;
+  }
+  .div-content {
+    grid-template-rows: 1fr;
+    max-width: 100vh;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
