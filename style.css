@@ -237,7 +237,7 @@ section {
 .front-test a {
   text-decoration: none;
 }
-@media (min-width: 1000px) and (max-width: 1300px) {
+@media (min-width: 600px) and (max-width: 1300px) {
   .scroll-arrow {
     top: 742px;
   }
@@ -354,17 +354,24 @@ section {
   }
 
   .front-test {
-    margin: 10px;
+    margin: 8px;
     padding: 0px 8px;
   }
 
   .back-test {
-    margin: 10px;
+    margin: 8px;
     padding: 0px 8px;
   }
 
   section {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 414px) {
+  .tipo-test {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
