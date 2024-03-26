@@ -237,18 +237,35 @@ section {
 .front-test a {
   text-decoration: none;
 }
+@media (max-width: 1200px) {
+  .scroll-arrow {
+    top: 742px;
+  }
+  #scroll-right {
+    height: 140px;
+  }
+  #scroll-left {
+    height: 140px;
+  }
+  .img-container {
+    display: none;
+  }
+  .div-content {
+    width: 470px;
+  }
+}
 
 @media (max-width: 1600px) {
   .img-mao {
-    margin-left: 120px;
+    margin-left: 130px;
   }
 
   #scroll-right {
-    margin-bottom: 88px;
-    margin-left: -30px;
+    bottom: -4px;
+    left: 550px;
   }
   #scroll-left {
-    margin-bottom: 88px;
+    bottom: -4px;
   }
 }
 
